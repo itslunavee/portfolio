@@ -412,6 +412,84 @@ a:hover {
     transform: translateY(-3px);
 }
 
+.contact-container {
+    max-width: 700px;
+    margin: 6rem auto 2rem;
+    padding: 2rem 3rem; 
+    background: rgba(255,255,255,0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.contact-form {
+    display: grid;
+    gap: 2rem;
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.form-group {
+    position: relative;
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1.2rem;
+    border: 2px solid #fbc2eb;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.9);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255,111,97,0.3);
+}
+
+.form-label {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0 0.5rem;
+    background: white;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    color: #666;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    top: -0.6rem;
+    font-size: 0.8rem;
+    color: #ff6f61;
+}
+
+.submit-btn {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255,111,97,0.3);
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #fbc2eb;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
@@ -491,6 +569,14 @@ a:hover {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        margin: 5rem 1.5rem 2rem;
+    }
+    
+    .form-input {
+        padding: 1rem;
     }
 
 }
