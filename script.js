@@ -59,3 +59,23 @@ document.addEventListener("DOMContentLoaded", function () {
         heroText.style.visibility = "visible"; 
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    let currentProject = 0;
+    const projects = document.querySelectorAll('.project-item');
+    
+    function showProject(index) {
+        projects.forEach(project => project.classList.remove('active'));
+        projects[index].classList.add('active');
+    }
+
+    document.getElementById('nextProject').addEventListener('click', () => {
+        currentProject = (currentProject + 1) % projects.length;
+        showProject(currentProject);
+    });
+
+    document.getElementById('prevProject').addEventListener('click', () => {
+        currentProject = (currentProject - 1 + projects.length) % projects.length;
+        showProject(currentProject);
+    });
+}); 

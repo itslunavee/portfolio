@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Luna Von Besser</h1>
+            <nav>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="projects-container">
+        
+        <div class="project-item active">
+            <h2>Media Player</h2>
+            <div class="project-date">Completed: March 2022</div>
+            <img src="images/mediaplayer.png" alt="Media Player Screenshot" class="project-image">
+            <p>Designed and built a front end UI for an interactive AR art installation at Humber College.</p>
+            <div class="project-tech">
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">HTML/CSS</span>
+            </div>
+            <a href="https://github.com/itslunavee/mediaplayer" target="_blank" class="github-button">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-item">
+            <h2>Fitness Tracker</h2>
+            <div class="project-date">Completed: January 2025</div>
+            <img src="images/fitnesstracker.png" alt="Fitness Tracker Java" class="project-image">
+            <p>Collects user fitness information to provide data for key metrics using Java and comprehensive unit testing.</p>
+            <div class="project-tech">
+                <span class="tech-pill">Java</span>
+            </div>
+            <a href="https://github.com/itslunavee/CST8284_Assignment1" target="_blank" class="github-button">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-item">
+            <h2>Portfolio Website</h2>
+            <div class="project-date">Completed: February 2025</div>
+            <img src="images/portfolio.png" alt="Portfolio Screenshot" class="project-image">
+            <p>Responsive personal portfolio website with interactive elements and animations. Built with pure HTML/CSS/JavaScript.</p>
+            <div class="project-tech">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+            </div>
+            <a href="https://github.com/itslunavee/portfolio" target="_blank" class="github-button">
+                <i class="fab fa-github"></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-nav">
+            <button class="nav-button" id="prevProject">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-button" id="nextProject">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
