@@ -270,6 +270,14 @@ a:hover {
     text-decoration: none;
 }
 
+.contact-info .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
 .resume-section {
     margin: 2rem 0;
     padding: 1.5rem;
@@ -374,11 +382,23 @@ a:hover {
         padding: 1rem;
     }
     
-    .resume-contact a {
-        display: block;
-        margin: 0.5rem 0;
+    .contact-info .contact-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
     
+    .contact-info a {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 0;
+    }
+    
+    .contact-info a i {
+        margin-right: 0.5rem;
+    }
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
